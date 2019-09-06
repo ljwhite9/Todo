@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3C7F70D923230A1200DB8B20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F70D823230A1200DB8B20 /* AppDelegate.swift */; };
-		3C7F70DB23230A1200DB8B20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F70DA23230A1200DB8B20 /* ViewController.swift */; };
+		3C7F70DB23230A1200DB8B20 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F70DA23230A1200DB8B20 /* TodoViewController.swift */; };
 		3C7F70DE23230A1200DB8B20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7F70DC23230A1200DB8B20 /* Main.storyboard */; };
 		3C7F70E023230A1200DB8B20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7F70DF23230A1200DB8B20 /* Assets.xcassets */; };
 		3C7F70E323230A1200DB8B20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7F70E123230A1200DB8B20 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		3C7F70D523230A1200DB8B20 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7F70D823230A1200DB8B20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C7F70DA23230A1200DB8B20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C7F70DA23230A1200DB8B20 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		3C7F70DD23230A1200DB8B20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C7F70DF23230A1200DB8B20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C7F70E223230A1200DB8B20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				3C7F70D823230A1200DB8B20 /* AppDelegate.swift */,
-				3C7F70DA23230A1200DB8B20 /* ViewController.swift */,
+				3C7F70DA23230A1200DB8B20 /* TodoViewController.swift */,
 				3C7F70DC23230A1200DB8B20 /* Main.storyboard */,
 				3C7F70DF23230A1200DB8B20 /* Assets.xcassets */,
 				3C7F70E123230A1200DB8B20 /* LaunchScreen.storyboard */,
@@ -96,11 +96,12 @@
 				TargetAttributes = {
 					3C7F70D423230A1200DB8B20 = {
 						CreatedOnToolsVersion = 10.3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 3C7F70D023230A1200DB8B20 /* Build configuration list for PBXProject "Todo" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -135,7 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C7F70DB23230A1200DB8B20 /* ViewController.swift in Sources */,
+				3C7F70DB23230A1200DB8B20 /* TodoViewController.swift in Sources */,
 				3C7F70D923230A1200DB8B20 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,8 +273,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -285,10 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RPZKBF8LX6;
 				INFOPLIST_FILE = Todo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loganwhite.Todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -303,10 +300,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RPZKBF8LX6;
 				INFOPLIST_FILE = Todo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loganwhite.Todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
